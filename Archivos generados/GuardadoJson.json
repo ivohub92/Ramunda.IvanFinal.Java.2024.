@@ -1,0 +1,29 @@
+[
+  {
+    "flechas": 3,
+    "velocidadDeTiro": 4,
+    "nombre": "Legolas",
+    "nivel": 7,
+    "vidas": 4,
+    "tipo": "ARQUERO",
+    "id": "359ac52e-4318-455d-b366-d24b9aea9ca3"
+  },
+  {
+    "fuerza": 2,
+    "escudo": 3,
+    "nombre": "Luno",
+    "nivel": 6,
+    "vidas": 4,
+    "tipo": "GUERRERO",
+    "id": "af552db7-ed07-43e2-9408-7ce8c1384fcf"
+  },
+  {
+    "mana": 4,
+    "arcanos": 2,
+    "nombre": "Luna",
+    "nivel": 2,
+    "vidas": 4,
+    "tipo": "MAGO",
+    "id": "175a1ac9-5331-4456-a41b-1a8171bad05e"
+  }
+]

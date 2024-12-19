@@ -1,0 +1,25 @@
+INFORME DE PERSONAJES FILTRADOS POR NIVEL MAXIMO: 6
+=====================
+Nombre del personaje: Luno
+Nivel: 6
+Puntos de vida: 4
+Rol: GUERRERO
+Fuerza: 2
+Escudo: 3
+
+******************************
+Nombre del personaje: Luna
+Nivel: 2
+Puntos de vida: 4
+Rol: MAGO
+Mana: 4
+Arcanos: 2
+Luna - Sin habilidades especiales
+******************************
+
+RESUMEN ESTADÍSTICO
+=====================
+Raza: Mago, Cantidad: 1, Porcentaje: 50,00%, Nivel Promedio: 2,00
+Raza: Guerrero, Cantidad: 1, Porcentaje: 50,00%, Nivel Promedio: 6,00
+
+Nivel Promedio Global de personajes filtrados los Personajes: 4,00

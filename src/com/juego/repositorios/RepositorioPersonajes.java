@@ -51,7 +51,7 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
     }
     
     
-    //Metodo exclusivo para cargar arqueros y mostrar la aplicacion de Super.
+    //Metodo exclusivo para cargar arqueros y mostrar la aplicacion de wildcard con limite inferiror
     /**
      * 
      * 
@@ -68,10 +68,10 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
      * 
      * @param lista Una lista que leera arquero y sus supertipos
      */
-    public void procesarLista(List<? super Arquero> lista) {
+    public void procesarListaArqueros(List<? super Arquero> lista) {
         for (Object obj : lista) { // wildcard inferior permite tratar la lista como una colección de `Object`
             if (obj instanceof Arquero) { // Verificar si el objeto es un `Arquero`
-                Arquero arquero = (Arquero) obj; // Realizar casting seguro. Es necesario para que arquero pueda usar sus metodos propios de la clase
+                Arquero arquero = (Arquero) obj; // Realizar casting seguro. Es necesario para que arquero pueda usar sus metodos propios de su clase
             }
         }
     }
@@ -129,7 +129,7 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
     //Permite usar for each en nuestra lista
     @Override
     public Iterator<Personaje> iterator() {
-        return getLista().iterator();
+        return getPersonajes().iterator();
     }
     
     

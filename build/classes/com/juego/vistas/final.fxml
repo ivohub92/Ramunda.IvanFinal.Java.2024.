@@ -44,17 +44,17 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-          <Button fx:id="agregarPersonaje" layoutX="14.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnAgregarPersonaje" prefHeight="25.0" prefWidth="116.0" text="Agregar Personaje" />
-            <Button fx:id="eliminarPersonaje" layoutX="284.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnEliminarPersonaje" prefHeight="25.0" prefWidth="116.0" text="Eliminar Personaje" />
-            <Button fx:id="actualizarPersonaje" layoutX="140.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnActualizarPersonaje" prefHeight="25.0" prefWidth="127.0" text="Actualizar Personaje" />
-            <Button fx:id="filtroPorNivel" layoutX="427.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnFiltroPorNivel" prefHeight="25.0" prefWidth="103.0" text="Filtrar Por Nivel" />
-            <Button fx:id="btnGuardarBin" layoutX="306.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnGuardarBin" prefHeight="25.0" prefWidth="127.0" text="Guardar en binario" />
-            <Button fx:id="ordenarPorNombre" layoutX="548.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnOrdenarPorNombre" prefHeight="25.0" prefWidth="127.0" text="Ordenar por nombre" />
-            <Button fx:id="ordenarPorTipoYNivel" layoutX="695.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnOrdenarPorTipoYNivel" prefHeight="25.0" prefWidth="146.0" text="Ordenar por tipo y nivel" />
-            <Button fx:id="exportarJson" layoutX="360.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnExportarJson" prefHeight="25.0" prefWidth="135.0" text="Exportar datos JSON" />
-            <Button fx:id="cargarJson" layoutX="515.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnCargarJson" prefHeight="25.0" prefWidth="116.0" text="Cargar datos JSON" />
-            <Button fx:id="guardarCvs" layoutX="197.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnGuardarCvs" prefHeight="25.0" prefWidth="146.0" text="Guardar datos en CVS" />
-            <Button fx:id="cargarCvs" layoutX="649.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnCargarCvs" prefHeight="25.0" prefWidth="116.0" text="Cargar datos CVS" />
+          <Button fx:id="agregarPersonaje" layoutX="55.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnAgregarPersonaje" prefHeight="25.0" prefWidth="116.0" text="Agregar Personaje" />
+            <Button fx:id="eliminarPersonaje" layoutX="342.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnEliminarPersonaje" prefHeight="25.0" prefWidth="116.0" text="Eliminar Personaje" />
+            <Button fx:id="actualizarPersonaje" layoutX="193.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnActualizarPersonaje" prefHeight="25.0" prefWidth="127.0" text="Actualizar Personaje" />
+            <Button fx:id="filtroPorNivel" layoutX="380.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnFiltroPorNivel" prefHeight="25.0" prefWidth="164.0" text="Informe de PJs por nivel" />
+            <Button fx:id="btnGuardarBin" layoutX="846.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnGuardarBin" prefHeight="25.0" prefWidth="127.0" text="Guardar en binario" />
+            <Button fx:id="ordenarPorNombre" layoutX="475.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnOrdenarPorNombre" prefHeight="25.0" prefWidth="127.0" text="Ordenar por nombre" />
+            <Button fx:id="ordenarPorTipoYNivel" layoutX="622.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnOrdenarPorTipoYNivel" prefHeight="25.0" prefWidth="146.0" text="Ordenar por tipo y nivel" />
+            <Button fx:id="exportarJson" layoutX="391.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnExportarJson" prefHeight="25.0" prefWidth="135.0" text="Exportar datos JSON" />
+            <Button fx:id="cargarJson" layoutX="544.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnCargarJson" prefHeight="25.0" prefWidth="116.0" text="Cargar datos JSON" />
+            <Button fx:id="guardarCvs" layoutX="79.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnGuardarCvs" prefHeight="25.0" prefWidth="146.0" text="Guardar datos en CVS" />
+            <Button fx:id="cargarCvs" layoutX="257.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnCargarCvs" prefHeight="25.0" prefWidth="116.0" text="Cargar datos CVS" />
             <TextField fx:id="campoNombre" layoutX="294.0" layoutY="33.0" promptText="INGRESE NOMBRE" />
             <TextField fx:id="campoVidas" layoutX="294.0" layoutY="76.0" prefHeight="25.0" prefWidth="96.0" promptText="INGRESE VIDAS" />
             <Label fx:id="labelNombre" layoutX="143.0" layoutY="37.0" prefHeight="17.0" prefWidth="127.0" text="Nombre del personaje" />
@@ -74,10 +74,10 @@
             <Label fx:id="labelFlechas" layoutX="637.0" layoutY="102.0" prefHeight="17.0" prefWidth="116.0" text="Cantidad de flechas" visible="false" />
             <TextField fx:id="campoVelocidad" layoutX="776.0" layoutY="56.0" visible="false" />
             <TextField fx:id="campoFlechas" layoutX="776.0" layoutY="98.0" visible="false" />
-            <Button fx:id="bajarNivel" layoutX="851.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnSubirNivel" prefHeight="25.0" prefWidth="116.0" text="Subir Nivel de pj" />
+            <Button fx:id="bajarNivel" layoutX="793.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnSubirNivel" prefHeight="25.0" prefWidth="116.0" text="Subir Nivel de pj" />
             <TextField fx:id="campoNivel" layoutX="294.0" layoutY="115.0" prefHeight="25.0" prefWidth="96.0" promptText="INGRESE NIVEL" />
             <Label fx:id="labelNivel" layoutX="140.0" layoutY="115.0" prefHeight="17.0" prefWidth="74.0" text="Nivel" />
-            <Button fx:id="btnCargarBinario" layoutX="467.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnCargarBinario" prefHeight="25.0" prefWidth="127.0" text="Cargar en binario" />
+            <Button fx:id="btnCargarBinario" layoutX="696.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnCargarBinario" prefHeight="25.0" prefWidth="127.0" text="Cargar en binario" />
       </children>
     </AnchorPane>
   </children>

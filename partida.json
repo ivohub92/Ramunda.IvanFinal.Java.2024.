@@ -1,29 +1,38 @@
 [
   {
+    "flechas": 2,
+    "velocidadDeTiro": 4,
+    "nombre": "Runa",
+    "nivel": 8,
+    "vidas": 4,
+    "tipo": "ARQUERO",
+    "id": "69eb0b4f-5a89-4a30-89bc-9779906c289f"
+  },
+  {
+    "fuerza": 2,
+    "escudo": 3,
+    "nombre": "Luno",
+    "nivel": 6,
+    "vidas": 4,
+    "tipo": "GUERRERO",
+    "id": "2a2731d4-3e85-4f33-a8f6-dc889d20f2a4"
+  },
+  {
+    "mana": 4,
+    "arcanos": 3,
+    "nombre": "Mario",
+    "nivel": 4,
+    "vidas": 3,
+    "tipo": "MAGO",
+    "id": "0b81365c-87d1-4470-ab26-e025fe97e391"
+  },
+  {
     "mana": 4,
     "arcanos": 3,
     "nombre": "Aquelarre",
-    "nivel": 3,
+    "nivel": 20,
     "vidas": 32,
     "tipo": "MAGO",
-    "id": "f5c3f767-2d07-4697-bfb4-19e8187c1dcf"
-  },
-  {
-    "flechas": 2,
-    "velocidadDeTiro": 2,
-    "nombre": "Mario",
-    "nivel": 3,
-    "vidas": 3,
-    "tipo": "ARQUERO",
-    "id": "fab05ab5-ca4f-4472-98b6-8099315fad38"
-  },
-  {
-    "mana": 4,
-    "arcanos": 3,
-    "nombre": "Mario",
-    "nivel": 3,
-    "vidas": 3,
-    "tipo": "MAGO",
-    "id": "41114dc1-129b-46bc-b926-94604ffa2202"
+    "id": "12e9b938-220c-4090-88df-fd385765e1ba"
   }
 ]
