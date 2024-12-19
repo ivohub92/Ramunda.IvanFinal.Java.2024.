@@ -1,0 +1,29 @@
+[
+  {
+    "mana": 4,
+    "arcanos": 3,
+    "nombre": "Aquelarre",
+    "nivel": 3,
+    "vidas": 32,
+    "tipo": "MAGO",
+    "id": "f5c3f767-2d07-4697-bfb4-19e8187c1dcf"
+  },
+  {
+    "flechas": 2,
+    "velocidadDeTiro": 2,
+    "nombre": "Mario",
+    "nivel": 3,
+    "vidas": 3,
+    "tipo": "ARQUERO",
+    "id": "fab05ab5-ca4f-4472-98b6-8099315fad38"
+  },
+  {
+    "mana": 4,
+    "arcanos": 3,
+    "nombre": "Mario",
+    "nivel": 3,
+    "vidas": 3,
+    "tipo": "MAGO",
+    "id": "41114dc1-129b-46bc-b926-94604ffa2202"
+  }
+]
