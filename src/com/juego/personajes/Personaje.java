@@ -6,7 +6,6 @@ package com.juego.personajes;
 import java.io.Serializable;
 import java.util.Objects;
 import java.util.UUID;
-import com.juego.interfaces.HabilidadEspecial;
 
 /**
  *
@@ -18,7 +17,6 @@ import com.juego.interfaces.HabilidadEspecial;
 public abstract class Personaje implements Serializable, Comparable<Personaje>  {
     
     private static final long serialVersionUID = 1L;//identificador de la serializacion
-    //
     private String nombre;
     private int nivel;
     protected int vidas;

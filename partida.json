@@ -1,12 +1,21 @@
 [
   {
-    "flechas": 2,
+    "flechas": 3,
     "velocidadDeTiro": 4,
-    "nombre": "Runa",
-    "nivel": 8,
+    "nombre": "Prosciutto",
+    "nivel": 7,
     "vidas": 4,
     "tipo": "ARQUERO",
-    "id": "69eb0b4f-5a89-4a30-89bc-9779906c289f"
+    "id": "a99b4aa4-6017-4af9-89a2-217bf48713c2"
+  },
+  {
+    "mana": 4,
+    "arcanos": 2,
+    "nombre": "Luna",
+    "nivel": 12,
+    "vidas": 4,
+    "tipo": "MAGO",
+    "id": "24b22f59-a8ae-4275-b3e1-d554ec4dd8b9"
   },
   {
     "fuerza": 2,
@@ -15,24 +24,6 @@
     "nivel": 6,
     "vidas": 4,
     "tipo": "GUERRERO",
-    "id": "2a2731d4-3e85-4f33-a8f6-dc889d20f2a4"
-  },
-  {
-    "mana": 4,
-    "arcanos": 3,
-    "nombre": "Mario",
-    "nivel": 4,
-    "vidas": 3,
-    "tipo": "MAGO",
-    "id": "0b81365c-87d1-4470-ab26-e025fe97e391"
-  },
-  {
-    "mana": 4,
-    "arcanos": 3,
-    "nombre": "Aquelarre",
-    "nivel": 20,
-    "vidas": 32,
-    "tipo": "MAGO",
-    "id": "12e9b938-220c-4090-88df-fd385765e1ba"
+    "id": "d96767e5-de60-4718-9092-5033a04a5779"
   }
 ]

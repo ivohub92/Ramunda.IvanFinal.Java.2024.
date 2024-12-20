@@ -19,12 +19,10 @@ public class RepositorioGenerico<T> {
      * Gson, que nos permite trabajar con formatos json
      * ArchvoJson es el nombre del archivo json que va a autoguardarse con cada modificacion
      */
-    
-    
+        
     protected List<T> lista;
     protected Gson gson;
     protected String archivoJson;
-
 
     /**
      * 
@@ -41,7 +39,7 @@ public class RepositorioGenerico<T> {
      * 
      * @param objeto Objeto T que quiero agregar al archivo Json
      */
-    public void guardar(T objeto) {
+    public void agregarYGuardarObjeto(T objeto) {
         lista.add(objeto);
         guardarEnJson();
     }
@@ -165,7 +163,7 @@ public class RepositorioGenerico<T> {
 
     
     /**
-     * Guarda en Json el estado de la lista en ese momento.
+     * Guarda en Json el estado de la lista en ese momento en nuestro archivo de autoguardado
      */
     public void guardarEnJson() {
         try (Writer escritor = new FileWriter(archivoJson)) {
@@ -247,7 +245,7 @@ public class RepositorioGenerico<T> {
      */
 
      
-    public void exportarGenerico(List<T> lista, File archivo) throws IOException {
+    public void exportarBinario(List<T> lista, File archivo) throws IOException {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(archivo))) {
             oos.writeObject(lista);
         }

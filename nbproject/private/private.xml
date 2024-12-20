@@ -4,10 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/interfaces/HabilidadEspecial.java</file>
-            <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/controlador/ControladorVentanaFiltro.java</file>
+            <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/personajes/Personaje.java</file>
             <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/controlador/ControladorPersonajes.java</file>
             <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/repositorios/RepositorioPersonajes.java</file>
-            <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/metodosAuxiliares/Comparador.java</file>
             <file>file:/C:/Users/ivan_/Desktop/FinalProgramacion/src/com/juego/interfaces/FiltroPersonaje.java</file>
         </group>
     </open-files>

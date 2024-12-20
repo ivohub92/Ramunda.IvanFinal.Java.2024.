@@ -84,10 +84,7 @@ public class ControladorPersonajes {
     
     @FXML
     private Label labelVelocidad;
-    
-    @FXML
-    private Label labelNivel;
-    
+        
     @FXML
     private ListView<Personaje> listaVistaPersonajes;
     
@@ -529,7 +526,7 @@ public class ControladorPersonajes {
         File archivo = fileChooser.showSaveDialog(new Stage());
         if (archivo != null) {
             try {
-                repositorioPersonajes.exportarGenerico(repositorioPersonajes.getPersonajes(), archivo);
+                repositorioPersonajes.exportarBinario(repositorioPersonajes.getPersonajes(), archivo);
                 System.out.println("Personajes exportados correctamente.");
             } catch (IOException e) {
                 e.printStackTrace();

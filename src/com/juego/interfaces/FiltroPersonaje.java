@@ -9,29 +9,33 @@ import com.juego.personajes.*;
  *
  * @author ivan_
  */
-import java.util.function.Predicate;
 
-public class FiltroPersonaje {
+@FunctionalInterface
+public interface FiltroPersonaje {
 
     /**
-     * 
-     * @param <T>
-     * @param tipoPersonaje
-     * @return expresion lambda que retorna true cuando coincide el personaje con la clase
-     * usamos para recorrer una lista
+     * Método funcional que filtra un personaje según una condición específica.
+     * @param personaje el personaje a evaluar
+     * @return true si cumple la condición, false en caso contrario
      */
-    public static <T extends Personaje> Predicate<Personaje> porTipo(Class<T> tipoPersonaje) {
+    boolean filtrar(Personaje personaje);
+
+    /**
+     * Método estático que retorna un filtro por tipo de personaje.
+     * @param <T> el tipo específico de personaje
+     * @param tipoPersonaje la clase del tipo de personaje
+     * @return un filtro funcional para personajes de ese tipo
+     */
+    static <T extends Personaje> FiltroPersonaje porTipo(Class<T> tipoPersonaje) {
         return personaje -> tipoPersonaje.isInstance(personaje);
     }
 
     /**
-     * 
-     * @param valor
-     * @return expresion lambda que retorna true cuando el nivel es menor o igual al ingresado
-     * usamos para recorrer una lista
+     * Método estático que retorna un filtro por nivel.
+     * @param nivel el nivel máximo permitido
+     * @return un filtro funcional para personajes con nivel menor o igual al especificado
      */
-    
-    public static Predicate<Personaje> porNivel(int valor) {
-        return personaje -> personaje.getNivel() <= valor;
+    static FiltroPersonaje porNivel(int nivel) {
+        return personaje -> personaje.getNivel() <= nivel;
     }
 }

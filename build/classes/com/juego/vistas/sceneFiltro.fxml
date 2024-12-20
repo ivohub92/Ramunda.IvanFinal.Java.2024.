@@ -39,7 +39,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.juego.vistas.ControladorVentanaFiltro">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.juego.controlador.ControladorVentanaFiltro">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="331.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
       <children>

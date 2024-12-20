@@ -5,7 +5,7 @@
 package com.juego.repositorios;
 
 
-import com.juego.metodosAuxiliares.Comparador;
+import java.util.Comparator;
 import com.juego.interfaces.FiltroPersonaje;
 import com.google.gson.Gson;
 import java.io.File;
@@ -46,36 +46,21 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
      */
     
     public void agregarPersonajes(Personaje personaje) {
-        guardar(personaje);
+        agregarYGuardarObjeto(personaje);
     
     }
     
+   
     
-    //Metodo exclusivo para cargar arqueros y mostrar la aplicacion de wildcard con limite inferiror
-    /**
-     * 
-     * 
-     * @param lista una lista que, para agregar en este caso, solo agregara arqueros o supertipos
-     * @param arquero un objeto arquero
-     */
-    public void agregarArqueros(List<? super Arquero> lista, Arquero arquero) {
-        lista.add(arquero); // Agregar un arquero está permitido
-        System.out.println("Se ha agregado un arquero: " + arquero.getNombre());
-    }
-
-    // Método para procesar los elementos de la lista
-    /**
-     * 
-     * @param lista Una lista que leera arquero y sus supertipos
-     */
-    public void procesarListaArqueros(List<? super Arquero> lista) {
-        for (Object obj : lista) { // wildcard inferior permite tratar la lista como una colección de `Object`
-            if (obj instanceof Arquero) { // Verificar si el objeto es un `Arquero`
-                Arquero arquero = (Arquero) obj; // Realizar casting seguro. Es necesario para que arquero pueda usar sus metodos propios de su clase
+    
+    
+    public static void filtrarArqueros(List<? super Arquero> personajes, List<? extends Personaje> todosPersonajes) {//Filtramos lista cuya salida sera Arquero o supertipos
+        for (Personaje personaje : todosPersonajes) {//Una lista asi acepta una lista de genericos
+            if (personaje instanceof Arquero) {
+                personajes.add((Arquero) personaje);//Casteamos a Arquero para poder aplicar sus metodos especificos de la clase a la que pertenece
             }
         }
     }
-    
       
     
 
@@ -89,8 +74,9 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
      */
     public static List<Personaje> filtrarPersonajesPorNivel(List<? extends Personaje> personajes, int nivel) {
         List<Personaje> resultado = new ArrayList<>();
+        FiltroPersonaje filtro = FiltroPersonaje.porNivel(nivel); // Creamos el filtro una vez
         for (Personaje personaje : personajes) {
-            if (FiltroPersonaje.porNivel(nivel).test(personaje)) {//Llamamos al metodo generico de la interfaz que permite filtrar por nivel
+            if (filtro.filtrar(personaje)) { // Usamos el método funcional `filtrar`
                 resultado.add(personaje);
             }
         }
@@ -107,8 +93,9 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
      */
     public static List<Personaje> filtrarPersonajesPorTipo(List<? extends Personaje> personajes, Class<? extends Personaje> tipo) {
         List<Personaje> resultado = new ArrayList<>();
+         FiltroPersonaje filtro = FiltroPersonaje.porTipo(tipo);
         for (Personaje personaje : personajes) {
-            if (FiltroPersonaje.porTipo(tipo).test(personaje)) {
+            if (filtro.filtrar(personaje)) {
                 resultado.add(personaje);
             }
         }
@@ -214,10 +201,11 @@ public class RepositorioPersonajes extends RepositorioGenerico implements Iterab
      * @param personajes lista a ordenar 
      */ 
      
-     public void ordenarPorTipoYNivel(List<Personaje> personajes){
-     
-         Collections.sort(personajes, Comparador.POR_TIPO_Y_NIVEL);//Llamamos al metodo Comparador que aplica comparator por nivel y nombre
-     }
+     public void ordenarPorTipoYNivel(List<Personaje> personajes) {
+        // Usamos thenComparing para encadenar las comparaciones
+        Collections.sort(personajes, Comparator.comparing(Personaje::getTipo)
+                .thenComparingInt(Personaje::getNivel));
+    }
     
      
      /**
