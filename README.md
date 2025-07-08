@@ -3,6 +3,8 @@
 
 -CRUD: Gestor de personajes de rol
 
+LIBRERIAS A USAR -> JAVAFX
+
 
 -Buenos días, mi nombre es Iván Ramunda, tengo 31 años y soy docente de fisicoquímica y matematicas. Sin más preámbulos, paso a describir las funcionalidades de la aplicación presentada:
 
